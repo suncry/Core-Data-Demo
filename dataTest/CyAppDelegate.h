@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//引入CoreData框架
 @interface CyAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

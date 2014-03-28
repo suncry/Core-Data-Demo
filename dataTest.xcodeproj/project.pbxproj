@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23733CCB18E4045000031D20 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23733CCA18E4045000031D20 /* Storyboard.storyboard */; };
+		23733CD118E40EAD00031D20 /* CyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23733CD018E40EAD00031D20 /* CyViewController.m */; };
+		23733D6718E4265C00031D20 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 23733D6618E4265C00031D20 /* Entity.m */; };
+		23733D6E18E4298F00031D20 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 23733D6D18E4298F00031D20 /* Student.m */; };
 		2378D2A118E3F7710072B8FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2A018E3F7710072B8FD /* Foundation.framework */; };
 		2378D2A318E3F7710072B8FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2A218E3F7710072B8FD /* CoreGraphics.framework */; };
 		2378D2A518E3F7710072B8FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2A418E3F7710072B8FD /* UIKit.framework */; };
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23733CCA18E4045000031D20 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		23733CCF18E40EAD00031D20 /* CyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyViewController.h; sourceTree = "<group>"; };
+		23733CD018E40EAD00031D20 /* CyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyViewController.m; sourceTree = "<group>"; };
+		23733D6518E4265C00031D20 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		23733D6618E4265C00031D20 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		23733D6818E426A300031D20 /* dataTest 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "dataTest 2.xcdatamodel"; sourceTree = "<group>"; };
+		23733D6C18E4298F00031D20 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		23733D6D18E4298F00031D20 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		2378D29D18E3F7710072B8FD /* dataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2378D2A018E3F7710072B8FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2378D2A218E3F7710072B8FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,6 +96,8 @@
 		2378D29418E3F7700072B8FD = {
 			isa = PBXGroup;
 			children = (
+				23733D6518E4265C00031D20 /* Entity.h */,
+				23733D6618E4265C00031D20 /* Entity.m */,
 				2378D2A818E3F7710072B8FD /* dataTest */,
 				2378D2C518E3F7710072B8FD /* dataTestTests */,
 				2378D29F18E3F7710072B8FD /* Frameworks */,
@@ -119,7 +133,12 @@
 				2378D2B218E3F7710072B8FD /* CyAppDelegate.m */,
 				2378D2B718E3F7710072B8FD /* Images.xcassets */,
 				2378D2B418E3F7710072B8FD /* dataTest.xcdatamodeld */,
+				23733D6C18E4298F00031D20 /* Student.h */,
+				23733D6D18E4298F00031D20 /* Student.m */,
 				2378D2A918E3F7710072B8FD /* Supporting Files */,
+				23733CCA18E4045000031D20 /* Storyboard.storyboard */,
+				23733CCF18E40EAD00031D20 /* CyViewController.h */,
+				23733CD018E40EAD00031D20 /* CyViewController.m */,
 			);
 			path = dataTest;
 			sourceTree = "<group>";
@@ -231,6 +250,7 @@
 			files = (
 				2378D2AD18E3F7710072B8FD /* InfoPlist.strings in Resources */,
 				2378D2B818E3F7710072B8FD /* Images.xcassets in Resources */,
+				23733CCB18E4045000031D20 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23733D6718E4265C00031D20 /* Entity.m in Sources */,
 				2378D2B318E3F7710072B8FD /* CyAppDelegate.m in Sources */,
 				2378D2B618E3F7710072B8FD /* dataTest.xcdatamodeld in Sources */,
 				2378D2AF18E3F7710072B8FD /* main.m in Sources */,
+				23733CD118E40EAD00031D20 /* CyViewController.m in Sources */,
+				23733D6E18E4298F00031D20 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +471,7 @@
 				2378D2D118E3F7710072B8FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2378D2D218E3F7710072B8FD /* Build configuration list for PBXNativeTarget "dataTestTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +480,7 @@
 				2378D2D418E3F7710072B8FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -463,6 +488,7 @@
 		2378D2B418E3F7710072B8FD /* dataTest.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				23733D6818E426A300031D20 /* dataTest 2.xcdatamodel */,
 				2378D2B518E3F7710072B8FD /* dataTest.xcdatamodel */,
 			);
 			currentVersion = 2378D2B518E3F7710072B8FD /* dataTest.xcdatamodel */;

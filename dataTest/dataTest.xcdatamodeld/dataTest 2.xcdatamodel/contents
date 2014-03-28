@@ -9,7 +9,7 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Entity" positionX="-63" positionY="-36" width="128" height="73"/>
-        <element name="Student" positionX="133" positionY="-36" width="128" height="73"/>
+        <element name="Entity" positionX="-2691" positionY="-18" width="144" height="75"/>
+        <element name="Student" positionX="-2673" positionY="9" width="128" height="75"/>
     </elements>
 </model>
