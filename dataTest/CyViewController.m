@@ -175,6 +175,26 @@
     }
 }
 
+// 删除操作---给力版本
+- (void) deleteAllObjects: (NSString *)entityDescription
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:self.myDelegate.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *items = [self.myDelegate.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    
+    for (NSManagedObject *managedObject in items) {
+    	[self.myDelegate.managedObjectContext deleteObject:managedObject];
+    	NSLog(@"%@ object deleted",entityDescription);
+    }
+    if (![self.myDelegate.managedObjectContext save:&error]) {
+    	NSLog(@"Error deleting %@ - error:%@",entityDescription,error);
+    }
+}
+
 
 
 @end
